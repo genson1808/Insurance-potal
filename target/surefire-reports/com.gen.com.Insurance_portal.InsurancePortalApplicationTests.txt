@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.gen.com.Insurance_portal.InsurancePortalApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.855 s - in com.gen.com.Insurance_portal.InsurancePortalApplicationTests

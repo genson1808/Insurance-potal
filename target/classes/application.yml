@@ -1,0 +1,56 @@
+# ===============================
+# TWILIO
+# ===============================
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+app:
+  token:
+    refresh:
+      duration: 2592000000
+
+
+cloudinary:
+  cloud_name: dmhmclzpm
+  api_key: 981112714425554
+  api_secret: qZFjzDWOGhM3Rp9EIib7Xo3ofZI
+
+
+twilio:
+  account_sid: ACbe22cf4befa5adc5885b29bcc0b20ff1
+  auth_token: 6879e23d0c0ab37561bb1c2969a7c6ad
+  phone_number: +12058396039
+
+# ===============================
+# DATABASE
+# ===============================
+
+server:
+  port: 8080
+  error:
+    include-stacktrace: on_trace_param
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3308/insurance_portal
+    username: root
+    password: son1808
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+      max-request-size: 200MB
